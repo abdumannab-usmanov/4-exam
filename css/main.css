@@ -7,8 +7,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:  rgb(50, 49, 49);
-
+    background-color:  #323131;
+    font-family: 'Inter';
     overflow: hidden;
 }
 
@@ -55,11 +55,12 @@ a{
     display: flex;
 }
 
+
+
 .js-users,
 .js-posts,
 .js-comments {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
     margin-top: 0;
     list-style: none;
     width: 550px;
@@ -67,55 +68,65 @@ a{
     overflow-y: auto;
 }
 
-.users__item{
-    margin-bottom: 20px;
+li{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.users__item::before {
-    content: "";
-    width: 5px;
-    height: 200px;
-    display: inline-block;
-    margin-left: -15px;
-    margin-bottom: -177px;
-    background-color:wheat;
-    border-radius: 10px;
+.js-users{
+    margin-left: 20px;
 }
+
+.users__item{
+    margin-bottom: 50px;
+    
+}
+
+
 
 .users__text {
-    color: white;
-    display: inline-block;
-    margin-bottom: 0;
-    padding: 7px 10px;
-    margin-top: 0;
-    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 12px;
+    
 }
 
 .users__list {
+    width: 300px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .users-name {
-    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 39px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-right: 0;
-    font-size: 30px;
+    color: #FFFFFF;
+    
 }
 
 .users-id {
-    color:rgb(188, 203, 192);
-    font-size: 50px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 109px;    
+    color: #FFFFFF;
+    opacity: 0.5;
 }
 
 .users__address {
-    color:  lightgrey;
-    padding-left: 10px;
-    margin-bottom: 7px;
-    font-style: inherit;
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px; 
+    color: #ADADAD;
+    margin-bottom: 12px;
 }
 
 .users-title,
@@ -124,120 +135,157 @@ a{
 }
 
 .users-company {
-    color: rgb(154, 150, 65);
-    padding-left: 10px;
+    width: 300px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADADAD;
+    margin-bottom: 12px;
 }
 
+.users-title{
+    color: #FFFFFF;
+}
+
+
 .users-package {
+    width: 100%;
+    max-width: 205px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    
 }
 
 .users-phone {
-    color: #92aeeb;
-    padding-left: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E96DB;
+    
 }
 
 .users-phone::before {
+    display: flex;
+    align-items: center;
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
-    background: url("../images/phone-call.png") no-repeat center center;
-    margin-right: 5px;
+    background: url("../images/Phone.svg") no-repeat center center;
+    margin-right: 8px;
     background-size: contain;
 }
 
 .users-geo,
 .users-website {
-    display: inline-block;
-    color: #e7e7e6;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E96DB;
+    margin-bottom: 8px;
 }
 
-.users-website{
-    margin-left: 10px;
-}
+
 
 .users-geo::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
-    background: url("../images/geo.png") no-repeat center center;
+    background: url("../images/Vector.svg") no-repeat center center;
     background-size: contain;
     color: white;
+    margin-right: 8px;
 }
 
 .users-website::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin-right: 3px;
     display: inline-block;
-    background: url("../images/website.png") no-repeat center center;
+    background: url("../images/Geography.svg") no-repeat center center;
     background-size: contain;
+    margin-right: 8px
 }
 
 .users-email {
-    color: #1e96fc;
-    display: block;
-    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E96DB;
+    margin-bottom: 8px;
 }
 
 .users-email::before {
     content: "";
-    width: 20px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
-    margin-right: 3px;
-    margin-bottom: -3px;
-    background: url("../images/gmail.png") no-repeat center center;
+    background: url("../images/Gmail.svg") no-repeat center center;
     background-size: contain;
+    margin-right: 8px;
 }
 
 
+.posts-item{
+    margin-bottom: 40px;
+}
 
+.posts-wrapper{
+    width: 400px;
+}
 
 .posts-title {
     margin-top: 0;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
     padding: 0;
-    color: skyblue;
+    color: #FFFFFF;
 }
 
 .posts-text{
     margin-top: 0;
-    color: #e7ecef;
+    color: #ADADAD;
 }
 
-
+.comments-item{
+    margin-bottom: 40px;
+}
 
 .comments-name {
-    margin-bottom: 5px;
-    color: #aed9e0;
-  }
-  
-  .comments-email {
-    color: yellow;
-  }
-  
-  .comments-email::before {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+
+.comments-email {
+    display: inline-block;
+    color: #1E96DB;
+    margin-bottom: 8px;
+}
+
+.comments-email::before {
     content: "";
-    width: 20px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
     margin-bottom: -3px;
-    margin-right: 3px;
-    background: url("../images/gmail.png") no-repeat center center;
+    margin-right: 8px;
+    background: url("../images/Gmail.svg") no-repeat center center;
     background-size: contain;
-  }
-  
-  .comments-text {
+}
+
+.comments-text {
     margin-top: 5px;
-    color: #cddafd;
-  }
+    color: #ADADAD;
+}
 
 
 

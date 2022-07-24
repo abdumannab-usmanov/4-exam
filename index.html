@@ -21,11 +21,10 @@
     <template class="template-users">
         
         <li class="users__item">
-            
-            <h2 class="users__text"></h2>
+            <span class="users-id"></span>
             <div class="users__list">
+                <h2 class="users__text"></h2>
                 <h3 class="users-name"></h3>
-                <span class="users-id"></span>
             </div>
             
             <address class="users__address">
@@ -42,12 +41,10 @@
             </div>
             
             <div class="users-package">
+                <a class="users-geo" target="_blank"></a>
+                <a class="users-website" target="_blank"></a>
+                <a class="users-email"></a>
                 <a class="users-phone"></a>
-                <div class="users-carton">
-                    <a class="users-geo" target="_blank"></a>
-                    <a class="users-website" target="_blank"></a>
-                    <a class="users-email"></a>
-                </div>
             </div>
             
         </li>
@@ -56,11 +53,13 @@
     
     <template class="posts__template">
         <li class="posts-item">
-            <h2 class="posts-title"></h2>
-            <p class="posts-text"></p>
+            <div class="posts-wrapper">
+                <h2 class="posts-title"></h2>
+                <p class="posts-text"></p>
+            </div>  
         </li>  
     </template>
-
+    
     <template class="comments__template">
         <li class="comments-item">
             <h2 class="comments-name"></h2>

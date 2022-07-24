@@ -27,11 +27,11 @@ function renderUsers(arr,node){
       templateUsers.querySelector(".users-suite").textContent = el.address.suite;
       templateUsers.querySelector(".users-city").textContent = el.address.city;
       templateUsers.querySelector(".users-zipcode").textContent = el.address.zipcode;
-      templateUsers.querySelector(".users-title").textContent = el.company.name;
+      templateUsers.querySelector(".users-title").textContent = ` ©   ${el.company.name}`;
       templateUsers.querySelector(".users-phrase").textContent = el.company.catchPhrase;
       templateUsers.querySelector(".users-bs").textContent = el.company.bs;
       templateUsers.querySelector(".users-phone").textContent = el.phone;
-      templateUsers.querySelector(".users-geo").textContent = "geo";
+      templateUsers.querySelector(".users-geo").textContent = "location";
       templateUsers.querySelector(".users-website").textContent = el.website;
       templateUsers.querySelector(".users-email").textContent = el.email;
       
