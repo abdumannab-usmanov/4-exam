@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <div class="wrapper">
+        <ul class="js-users"></ul>
+        <ul class="js-posts"></ul>
+        <ul class="js-comments"></ul>
+    </div>
+    
+    
+    <template class="template-users">
+        
+        <li class="users__item">
+            
+            <h2 class="users__text"></h2>
+            <div class="users__list">
+                <h3 class="users-name"></h3>
+                <span class="users-id"></span>
+            </div>
+            
+            <address class="users__address">
+                <span class="users-street"></span>
+                <span class="users-suite"></span>
+                <span class="users-city"></span>
+                <span class="users-zipcode"></span>
+            </address>
+            
+            <div class="users-company">
+                <span class="users-title"></span>
+                <span class="users-phrase"></span>
+                <span class="users-bs"></span>
+            </div>
+            
+            <div class="users-package">
+                <a class="users-phone"></a>
+                <div class="users-carton">
+                    <a class="users-geo" target="_blank"></a>
+                    <a class="users-website" target="_blank"></a>
+                    <a class="users-email"></a>
+                </div>
+            </div>
+            
+        </li>
+        
+    </template>
+    
+    <template class="posts__template">
+        <li class="posts-item">
+            <h2 class="posts-title"></h2>
+            <p class="posts-text"></p>
+        </li>  
+    </template>
+
+    <template class="comments__template">
+        <li class="comments-item">
+            <h2 class="comments-name"></h2>
+            <a class="comments-email" href=""></a>
+            <p class="comments-text"></p>
+        </li>
+    </template>
+    
+    <div class="loading">
+        <img class="loading__img" src="./images/loading.svg" alt="loading" />
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
